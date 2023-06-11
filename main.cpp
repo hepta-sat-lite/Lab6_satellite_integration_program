@@ -8,7 +8,7 @@ HEPTA_EPS eps(PA_0,PA_4);
 HEPTA_SENSOR sensor(PA_7,PB_7,PB_6,0xD0);
 HEPTA_COM com(PA_9,PA_10,9600);
 DigitalOut condition(PB_1);
-Serial sat(USBTX,USBRX, 38400);
+RawSerial sat(USBTX,USBRX, 38400);
 Timer sattime;
 int main()
 {
